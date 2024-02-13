@@ -10,9 +10,10 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  deployment:
 
     runs-on: ubuntu-latest
+    environment: release
 
     steps:
       - uses: actions/checkout@v3
